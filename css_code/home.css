@@ -14,7 +14,6 @@ a{
     text-decoration: none;
     color:var(--fifth-c);
     font-size: large;
-    border-bottom:1px dotted var(--third-c);
 }
 li{
     list-style: none;
@@ -36,6 +35,10 @@ li{
 }
 .nav-btn li{
     margin-right:15px;
+}
+#home{
+    font-weight: bolder;
+    border-bottom:1px dotted var(--third-c);
 }
 @keyframes example{
     0%{background-color: red;}
