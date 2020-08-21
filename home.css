@@ -10,19 +10,22 @@
 body{
     background-color: var(--first-c);
 }
-a{
+.link{
     text-decoration: none;
     color:var(--fifth-c);
     font-size: 1em;
 }
-.first-page{
+.link:hover{
+    color:white;
+}
+/* .first-page{
     height: 100%;
     width: 100%;
-}
+} */
 .nav_btn li:hover{
     color:#111;
-    background:#208bb6;
-    box-shadow: 0 0 50px #208bb6;
+    background:var(--fourth-c);
+    box-shadow: 0 0 50px var(--fourth-c);
 }
 li{
     list-style: none;
@@ -66,6 +69,8 @@ li{
 }
 .nav_btn li{
     font-size:xx-large;
+    border-radius:120px;
+    padding:7px;
 }
 .down{
     position: relative;
@@ -100,7 +105,7 @@ li{
 }
 #home{
     margin-top: 200px;
-    height:700px;
+    height:650px;
 }
 @keyframes animate{
     0%{
