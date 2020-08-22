@@ -70,13 +70,16 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url("./images/front2.jpg");
-    background-size: 100% 100%;
     backface-visibility: hidden;
     color: #fff;
     text-align: center;
     font-family: Helvetica;
     border-radius: 40px;
+}
+
+.intro {
+    background-image: url("./images/front2.jpg");
+    background-size: 100% 100%;
 }
 
 .intro-back {
@@ -102,7 +105,7 @@ body {
 
 .contact-card-content a {
     color: white;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .intro h3,
@@ -118,10 +121,11 @@ h2 {
 .intro h1 {
     text-transform: uppercase;
     color: cyan;
-    font-size: 30px;
+    font-size: 22px;
     text-shadow: 0 0 35px cyan;
     animation: fade 3s linear;
     font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
 }
 
 .front img {
@@ -151,8 +155,6 @@ h2 {
     font-style: italic;
 }
 
-.card-content {}
-
 .card:hover {
     transform: rotateY(-180deg);
     box-shadow: 0 0 50px white;
@@ -166,9 +168,10 @@ h2 {
 }
 
 .contact {
-    background-image: url('./images/contact.jpg');
+    background: url("./images/front.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
+    text-align: center;
     color: black;
 }
 
@@ -256,10 +259,34 @@ h2 {
     display: flex;
 }
 
-.acad-data {
+.acadamic-front {
+    background: url("./images/front.jpg");
+    background-size: 100% 100%;
+}
+
+.acadamic-front h1 {
+    margin-top: 150px;
+    color: cyan;
+    animation: fade 3s linear;
+}
+
+.acadamic-front .acad-data {
     display: flex;
     flex-direction: column;
     margin-right: 15px;
+}
+
+.acadamic-back button {
+    background-color: transparent;
+    color: cyan;
+}
+
+.acadamic-back button:hover {
+    box-shadow: 0 0 40px cyan;
+}
+
+.acadamic-back>.card-content {
+    margin-top: 100px;
 }
 
 .data-items {
@@ -305,23 +332,50 @@ h2 {
     animation: load 0.7s linear;
 }
 
+.skills-front {
+    background: url("./images/front2.jpg");
+    background-size: 100% 100%;
+}
+
+.skills-card-content h4 {
+    margin-top: 120px;
+}
+
+.skills-back>.card-btn button {
+    color: cyan;
+    background: transparent;
+}
+
+.skills-front h1 {
+    margin-top: 150px;
+    color: cyan;
+    animation: fade 3s linear;
+}
+
+.contact-front h2 {
+    text-align: center;
+    margin-top: 150px;
+    color: cyan;
+    animation: fade 3s linear;
+}
+
 .container p {
     color: white;
 }
 
 .first {
     width: 60%;
-    background-color: darkslategray;
+    background-color: black;
 }
 
 .second {
     width: 55%;
-    background-color: #2196F3;
+    background-color: purple;
 }
 
 .third {
     width: 40%;
-    background-color: #f44336;
+    background-color: orangered;
 }
 
 .fourth {
