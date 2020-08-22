@@ -35,16 +35,6 @@ body {
     font-style: bold;
 }
 
-.nav-area {
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-area li {
-    list-style: none;
-    margin-right: 10px;
-}
-
 .main {
     display: flex;
     justify-content: center;
@@ -275,7 +265,11 @@ h2 {
 .acadamic-front .acad-data {
     display: flex;
     flex-direction: column;
-    margin-right: 15px;
+    margin-right: 25px;
+}
+
+.acad-data-2 {
+    margin-left: 20px;
 }
 
 .acadamic-back button {
