@@ -4,8 +4,8 @@
     --third-c: #77878B;
     --fourth-c: #488286;
     --fifth-c: #B7D5D4;
-    --font-1: "arial";
-    --font-2: "times new roman";
+    --font-1: "roboto";
+    --font-2: "poppins";
 }
 
 body {
@@ -24,6 +24,8 @@ body {
     height: 120px;
     background-image: url('./images/education.jpg');
     background-size: 100% 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .heading h1 {
@@ -68,7 +70,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url("./images/intro-front.jpeg");
+    background-image: url("./images/front2.jpg");
     background-size: 100% 100%;
     backface-visibility: hidden;
     color: #fff;
@@ -77,17 +79,49 @@ body {
     border-radius: 40px;
 }
 
+.intro-back {
+    font-family: 'Roboto Slab', serif;
+    color: cyan;
+}
+
+.contact-card-content h2 {
+    color: cyan;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.contact-card-content ul {
+    margin-top: -13px;
+    margin-right: 36px;
+}
+
+.contact-card-content i:hover {
+    transition: 0.3s linear;
+    transform: rotate(360deg);
+}
+
+.contact-card-content a {
+    color: white;
+    font-size: 25px;
+}
+
 .intro h3,
 h2 {
     margin-left: 20px;
     text-align: left;
 }
 
+.intro-card-content {
+    color: white;
+}
+
 .intro h1 {
     text-transform: uppercase;
-    color: rgb(255, 253, 208);
+    color: cyan;
     font-size: 30px;
-    text-shadow: 0 0 25px rgb(255, 253, 208);
+    text-shadow: 0 0 35px cyan;
+    animation: fade 3s linear;
+    font-family: 'Raleway', sans-serif;
 }
 
 .front img {
@@ -303,6 +337,15 @@ h2 {
     color: white;
     text-align: center;
     vertical-align: middle;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes load {
