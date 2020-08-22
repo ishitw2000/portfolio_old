@@ -247,7 +247,9 @@ h2 {
     background-image: url('./images/education.jpg');
     background-size: 100% 100%;
     font-size: 14px;
+    color: rgb(47, 85, 85);
     height: 80px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #academics-heading i {
