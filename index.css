@@ -11,7 +11,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--first-c);
+    background-image: url('./images/photo.jpg');
+    background-size: cover;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,7 +20,27 @@ body {
     display: flex;
     color: white;
     justify-content: center;
-    font-style: oblique;
+    align-items: center;
+    height: 120px;
+    background-image: url('./images/education.jpg');
+    background-size: 100% 100%;
+}
+
+.heading h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: cyan;
+    font-style: bold;
+}
+
+.nav-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-area li {
+    list-style: none;
+    margin-right: 10px;
 }
 
 .main {
@@ -47,12 +68,26 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #CC3333;
+    background-image: url("./images/intro-front.jpeg");
+    background-size: 100% 100%;
     backface-visibility: hidden;
     color: #fff;
     text-align: center;
     font-family: Helvetica;
     border-radius: 40px;
+}
+
+.intro h3,
+h2 {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    color: rgb(255, 253, 208);
+    font-size: 30px;
+    text-shadow: 0 0 25px rgb(255, 253, 208);
 }
 
 .front img {
@@ -68,7 +103,9 @@ body {
     backface-visibility: hidden;
     text-align: center;
     font-family: Helvetica;
-    background-color: black;
+    background-image: url('./images/all-back.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     color: white;
     transform: rotateY(-180deg);
     border-radius: 40px;
@@ -170,7 +207,8 @@ body {
 
 #academics-heading {
     text-align: center;
-    background-color: cadetblue;
+    background-image: url('./images/education.jpg');
+    background-size: 100% 100%;
     font-size: 14px;
     height: 80px;
 }
@@ -206,6 +244,7 @@ body {
     flex-direction: column;
     vertical-align: middle;
     margin-top: 150px;
+    background: transparent;
 }
 
 .container {
@@ -213,8 +252,8 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    background: #ddd;
     margin-top: 4px;
+    background: transparent;
 }
 
 .skills-c {
@@ -233,12 +272,12 @@ body {
 }
 
 .container p {
-    color: black;
+    color: white;
 }
 
 .first {
     width: 60%;
-    background-color: #4CAF50;
+    background-color: darkslategray;
 }
 
 .second {
@@ -305,6 +344,9 @@ body {
     .main {
         flex-wrap: wrap;
     }
+    .header {
+        font-size: 50px;
+    }
     .card {
         width: 80%;
         height: 350px;
@@ -314,5 +356,11 @@ body {
     }
     .skills-c {
         width: 80%;
+    }
+    .header {
+        font-size: 12px;
+    }
+    .navigation {
+        visibility: hidden;
     }
 }
