@@ -9,7 +9,6 @@
 }
 
 body {
-    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     background-color: var(--first-c);
@@ -31,19 +30,61 @@ body {
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     margin: 10px;
     height: 400px;
     width: 50%;
-    background-image: url('./images/eb1.jpg');
-    background-position: center;
-    background-size: cover;
-    color: white;
     border-radius: 40px;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #CC3333;
+    backface-visibility: hidden;
+    color: #fff;
+    text-align: center;
+    font-family: Helvetica;
+    border-radius: 40px;
+}
+
+.front img {
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    font-family: Helvetica;
+    background-color: black;
+    color: white;
+    transform: rotateY(-180deg);
+    border-radius: 40px;
+}
+
+.card-head {
+    font-style: normal;
+    text-decoration: wheat;
+    font-style: italic;
+}
+
+.card-content {}
+
+.card:hover {
+    transform: rotateY(-180deg);
+    box-shadow: 0 0 50px white;
 }
 
 .academics {
@@ -58,10 +99,6 @@ body {
     background-position: center;
     background-size: cover;
     color: black;
-}
-
-.card:hover {
-    box-shadow: 0 0 50px white;
 }
 
 .card-btn button {
@@ -113,12 +150,6 @@ body {
     transform: translate(10px, 10px);
     animation-delay: 0s;
 }
-
-
-/* #home {
-    margin-top: 200px;
-    height: 650px;
-} */
 
 #academics {
     display: flex;
@@ -206,22 +237,22 @@ body {
 }
 
 .first {
-    width: 90%;
+    width: 60%;
     background-color: #4CAF50;
 }
 
 .second {
-    width: 80%;
+    width: 55%;
     background-color: #2196F3;
 }
 
 .third {
-    width: 65%;
+    width: 40%;
     background-color: #f44336;
 }
 
 .fourth {
-    width: 60%;
+    width: 40%;
     background-color: #808080;
 }
 
@@ -270,13 +301,13 @@ body {
     }
 }
 
-@media(max-width:700px) {
+@media(max-width:600px) {
     .main {
         flex-wrap: wrap;
     }
     .card {
-        width: 70%;
-        height: 400px;
+        width: 80%;
+        height: 350px;
     }
     .scroll {
         visibility: hidden;
