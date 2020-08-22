@@ -114,10 +114,11 @@ body {
     animation-delay: 0s;
 }
 
-#home {
+
+/* #home {
     margin-top: 200px;
     height: 650px;
-}
+} */
 
 #academics {
     display: flex;
@@ -165,6 +166,72 @@ body {
 
 .acad-data hr {
     visibility: hidden;
+}
+
+#skills {
+    display: flex;
+    height: 670px;
+    color: white;
+    flex-direction: column;
+    vertical-align: middle;
+    margin-top: 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background: #ddd;
+    margin-top: 4px;
+}
+
+.skills-c {
+    width: 50%;
+    background: var(--fifth-c);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    animation: load 0.7s linear;
+}
+
+.container p {
+    color: black;
+}
+
+.first {
+    width: 90%;
+    background-color: #4CAF50;
+}
+
+.second {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+.third {
+    width: 65%;
+    background-color: #f44336;
+}
+
+.fourth {
+    width: 60%;
+    background-color: #808080;
+}
+
+
+/* Dark Grey */
+
+@keyframes load {
+    from {
+        width: 0%
+    }
 }
 
 @keyframes animate {
