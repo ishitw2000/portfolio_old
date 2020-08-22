@@ -175,7 +175,7 @@ h2 {
 
 .card-btn button:hover {
     color: #111;
-    background: var(--fourth-c);
+    background: transparent;
     box-shadow: 0 0 40px white;
 }
 
