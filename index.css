@@ -8,6 +8,10 @@
     --font-2: "poppins";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -296,7 +300,7 @@ h2 {
 
 #skills {
     display: flex;
-    height: 670px;
+    height: 700px;
     color: white;
     flex-direction: column;
     vertical-align: middle;
@@ -357,6 +361,8 @@ h2 {
 
 .container p {
     color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif font-style: italic;
 }
 
 .first {
