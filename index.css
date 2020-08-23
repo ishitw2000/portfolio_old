@@ -436,7 +436,7 @@ h2 {
         height: 400px;
     }
     .scroll {
-        visibility: hidden;
+        display: none;
     }
     #academics {
         height: 1000px;
@@ -455,7 +455,7 @@ h2 {
         height: 350px;
     }
     .scroll {
-        visibility: hidden;
+        display: none;
     }
     .skills-c {
         width: 80%;
@@ -464,6 +464,6 @@ h2 {
         font-size: 12px;
     }
     .navigation {
-        visibility: hidden;
+        display: none;
     }
 }
